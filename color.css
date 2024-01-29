@@ -1,0 +1,121 @@
+
+
+@font-face {
+    font-family: 'Pop';
+    src: url('Poppins-Medium.ttf');
+}
+.container
+{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.side1 
+{
+    display: flex;
+}
+
+.part1 
+{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: purple;
+    right: -10px;
+    z-index: 2;
+}
+
+.part2
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.part3
+{
+    position: relative;
+    height: 160px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: black;
+    top: -70px;
+    right: -20px;
+}
+
+.eyes 
+{
+    position: relative;
+    display: flex;
+    z-index: 2;
+    right: -50px;
+    bottom: -55px;
+    
+}
+
+.ey
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    z-index: 2;
+    margin-right: 30px;
+}
+
+.pupille 
+{
+    position: relative;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: black;
+    bottom: -5px;
+    right: -5px;
+}
+
+.ombre 
+{
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 1px;
+    right: -2px;
+}
+
+
+.changecolor
+{
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+    width: 100%;
+    font-family: 'Pop';
+}
+.t
+{
+    position: relative;
+    top: -200px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 60px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content:center ;
+    display: flex;
+    font-family: 'Pop';
+}
+
+h1
+{
+    font-family: 'Pop';
+}

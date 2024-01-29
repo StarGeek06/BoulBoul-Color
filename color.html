@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="color.css">
+    
+    <title>Color Change</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="heart">
+            <div class="side1">
+                   
+                <div class="part1" id="part1">
+
+                </div>
+        
+                <div class="part2" id="part2">
+        
+                </div>
+                
+            </div>
+    
+    
+            <div class="part3" id="part3">
+                
+                <div class="eyes">
+                     <div class="ey">
+                          <div class="pupille" >
+                                <div class="ombre">
+
+                                </div>
+                          </div>
+                     </div>
+
+                     <div class="ey">
+
+                        <div class="pupille">
+                            <div class="ombre">
+                                    
+                            </div>
+                        </div>
+                        
+                     </div>
+                </div>
+            </div>
+
+    
+        </div>
+
+        <h1> BoulBoul</h1>
+    </div>
+
+    <div class="changecolor" id="changecolor" onclick="change()" style="cursor: pointer;">
+        <div class="t">
+            Clique
+        </div>
+    </div>
+
+    
+    <script>
+
+     var p1 = document.getElementById('part1');
+     var p2 = document.getElementById('part2');
+     var p3 = document.getElementById('part3');
+
+    function getRandomColor() 
+   {
+
+    var red = Math.floor(Math.random() * 256);
+    var green = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
+
+    
+    var color = `rgb(${red}, ${green}, ${blue})`;
+
+    return color;
+
+   }
+
+   function change()
+   {
+    
+    var randomcolor1 = getRandomColor();
+    var randomcolor2 = getRandomColor();
+
+    p1.style.backgroundColor = randomcolor2;
+    p2.style.backgroundColor = randomcolor1;
+    p3.style.backgroundColor = randomcolor1;
+    pplle.style.backgroundColor = randomcolor1;
+    
+    
+
+   }
+
+
+
+    </script>
+    
+</body>
+</html>
